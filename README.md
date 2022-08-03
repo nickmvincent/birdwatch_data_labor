@@ -13,6 +13,14 @@ There are two aspects of data labor from the user flow created by Twitter. The f
 This notebook contains insights into the data and separates them into sections based on different information gathered. When looking to run this notebook from scratch using an updated dataset, here are the steps. 
 
 1. Download daily updated data from https://twitter.github.io/birdwatch/contributing/download-data/ 
-2. Run twitterAPI.ipynb, which scrapes Twitter for newly noted tweets and addsinformation into noted-tweets.csv
-3. Run datacleaning notebook which joins data into two types of dataframes: tweets and corresponding notes, and notes and corresponding ratings. This notebook also cleans up text data through vectorization, the removal of links, punctuation, and numbers, and separates joined data into predictors and predictions.
-4. Run predictions or visualizations with this data.
+2. Run `twitterAPI.ipynb`, which scrapes Twitter for newly noted tweets and addsinformation into noted-tweets.csv
+3. Run `datacleaning` notebook which joins data into two types of dataframes: tweets and corresponding notes, and notes and corresponding ratings. This notebook also cleans up text data through vectorization, the removal of links, punctuation, and numbers, and separates joined data into predictors and predictions.
+4. Run `predictions` for ML experiments
+5. Run `visualizations` to visualize label frequencies and other descriptive stats
+6. Run `viz_ml` to reproduce figures from the paper (requires `predictions` to be run first)
+
+Other files in this repo:
+* `experiment_helpers.py` has important helper code for experiments. 
+* `additional_explorations` is a scratchpad for exploring the data, includes an example of exploratory interface for viewing complex topic model results. 
+* `descriptive` notebook has more descriptive stats
+* `spacy_test` is just a notebook for making sure spacy is installed properly. 
